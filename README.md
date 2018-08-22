@@ -2,11 +2,11 @@
 
 ## 라즈비안 설치
 
-https://www.raspberrypi.org/downloads/raspbian/에 들어가서`RASPBIAN STRETCH WITH DESKTOP` 다운로드
+https://www.raspberrypi.org/downloads/raspbian/ 에서 `RASPBIAN STRETCH WITH DESKTOP` 다운로드
 
 
 
-https://etcher.io/에서 프로그램 설치 후 SD카드에 이미지 넣기
+https://etcher.io/ 에서 프로그램 설치 후 SD카드에 이미지 넣기
 
 
 
@@ -62,6 +62,12 @@ sudo apt-get install vlc
 ```
 raspivid -o - -n -t 0 -w 640 -h 360 -fps 25|cvlc -vvv stream:///dev/stdin --sout '#standard{access=http,mux=ts,dst=:8090}' :demux=h264
 ```
+
+### VLC 플레이어
+
+1. https://www.videolan.org/vlc/index.ko.html 에서 플레이어 설치
+2. `미디어` - `네트워크 스트림 열기`
+3. `http://아이피주소:포트번호/` 입력
 
 
 
